@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html><head>
+<title>PS4 - PS5 JB FW by Games_World (2026)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+    html, body{
+background-image: url('img.jpg');
+height: 100%;
+ background-position: center;
+ background-size: cover;
+background-attachment: fixed;
+background-repeat:no-repeat;
+margin: 0;
+height: 100%;
+padding: 0;
+overflow: hidden;
+font-family: sans-serif;
+font-size: 20px;
+font-weight: bold;
+text-align: center;  
+width: 100%;
+overflow: hidden;
+}
+.info{
+overflow: hidden;position: 
+fixed;position: absolute;
+top: 150%;
+left: 50%;
+font-size: 15px;
+color: white;
+  font-family: Almendra Display;
+transform: translate(-50%, -50%);}
+
+#clock{
+ float:right;
+ margin-right:2.25%;
+ margin-top: 5px;
+ font-weight:bold;
+ font-size:16px;
+  color: white;
+  font-family: Almendra Display;
+			font-style:italic;
+}
+#date {
+ float:left;
+ margin-left:1.25%;
+ font-weight:bold;
+ margin-top: 5px;
+ font-size:16px;
+ color: white;
+ font-family: Almendra Display;
+			font-style:italic;}
+.hue {
+  color:yellow;
+  padding:10px;
+  border-radius:10px;
+  animation:hue 5s linear infinite;
+  -webkit-animation: hue 5s linear infinite;
+  box-shadow: 0px 0px 50px yellow;
+  color:white;
+  background:rgba(255,255,0,0.4);
+ }
+ .hue:hover{
+  color:yellow;
+  background:transparent;
+ }
+ @keyframes hue{
+ 0%{
+ filter:hue-rotate(0deg);
+ -webkit-filter:hue-rotate(0deg);
+ }
+ 10%{
+ box-shadow: 0px 1px 50px yellow;
+ }
+ 20%{
+ box-shadow: 1px 1px 50px yellow;
+ }
+ 30%{
+ box-shadow: 1px 0px 50px yellow;
+ }
+ 40%{
+  box-shadow: 1px -1px 50px yellow;
+ }
+ 50%{
+ box-shadow: 0px -1px 50px yellow;
+ }
+ 60%{
+ box-shadow: -1px -1px 50px yellow;
+ }
+ 70%{
+ box-shadow: -1px 0px 50px yellow;
+ }
+ 80%{
+ box-shadow: -1px 1px 50px yellow;
+ }
+ 90%{
+ box-shadow: 0px 1px 50px yellow;
+ }
+ 100%{
+ filter:hue-rotate(360deg);
+ -webkit-filter:hue-rotate(360deg);
+ }
+ }
+ .loader {
+position: absolute;
+left: 50%;
+top: 130%;
+margin: -75px 0 0 -75px;
+border: 10px solid #1f1e1e;
+border-radius: 50%;
+border-top: 10px solid #044595;
+border-left: 10px solid #044595;
+width: 80px;
+height: 80px;
+animation: spin 2s linear infinite;
+}
+@keyframes spin {
+0% {
+transform: rotate(0deg);
+}
+
+100% {
+transform: rotate(360deg);
+}
+}      
+        </style>
+<body>
+<hr>
+<span id="date" ></span><span id="clock" ></span>
+<h1 id="msgs"font style='font-size:20px;text-align:center;color:white;font-family:Almendra Display;font-style:italic;;color:white' >PS4 JB FW by Games_World (2026) </h1>
+
+<hr>
+<br>
+<div id="menu">
+<!-- <h1 style="font-size: 18px;color: yellow;">Select Your Firmware</h1>
+<a href="505goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 5.05 FW GoldHEN Host'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> 5.05 FW GoldHEN </button></a>
+<a href="505/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 5.05 FW Host v2.0'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> 5.05 FW v2.0 </button></a>
+<br>
+<a href="672goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW GoldHEN Host'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> 6.72 FW GoldHEN </button></a>
+<a href="672/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW Host v3.0'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> 6.72 FW v3.0 </button></a>
+<a href="702/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 7.02 FW Host v1.4'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> 7.02 FW v1.4 </button></a>
+<a href="75x/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 7.50 - 7.55 FW Host v1.5'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> 7.50 - 7.55 FW v1.5 </button></a>
+<br>
+<a href="900goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW GoldHEN Host - FontFaceSet Webkit'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> 9.00 FW GoldHEN </button></a>
+<a href="900v2/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW Host v2.8 with Manual Exploitation - FontFaceSet Webkit'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> 9.00 FW v2.8 | Manual </button></a>
+<a href="900v3/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW Host v3.0 with Automatic Exploitation - FontFaceSet Webkit'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> 9.00 FW v3.0 | Auto </button></a>
+<br>
+<a href="900goldhen_psfree/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW GoldHEN Host - Psfree Webkit'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> 9.00 GoldHEN | Psfree </button></a>
+<br>
+<a href="restore/index.html"><button class="btn" onmouseover="msgs.innerHTML='Restore a Host to User&#8217;s Guide without using DNS'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> Restore Host </button></a>
+<a href="nobd/index.html"><button class="btn btn-alt" onmouseover="msgs.innerHTML='A payload to update to 9.00 FW on consoles with a broken Blu-ray drive'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> Mira NoBD </button></a>
+<br>
+<a href="https://ps5jb-umtx2.netlify.app/"><button class="btn btn-ps5" onmouseover="msgs.innerHTML='PS5 UMTX2 1.xx - 5.xx FW Host v1.0 by idlesauce'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> PS5 UMTX2 v1.0 </button></a>
+<br>
+<button class="btn btn-onln" onmouseover="msgs.innerHTML='If you like my work you can support me with a donation.'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'" onclick="donations()" style="margin-top: 75px;margin-bottom: 15px;width: 468px;"> For Donations (Only in Cryptocurrencies) </button>
+<br>
+<a href="672/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW Host v3.0'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> 6.72 FW v3.0 </button></a>
+-->
+<h1 id="msgs" font style='font-size:20px;text-align:center;color:white;font-family:Almendra Display;font-style:italic;;color:white'>.. Choose your Gold-Hen version  ..</h3>
+<a href="672goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW GoldHEN Host'" onmouseout="msgs.innerHTML='PS4 JB FW by Games_World (2026'"> 6.72 Gold-Hen</button></a>
+
+
+        <pre id='console'></pre><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h1>
+		<div id="loader" class="loader"><br>
+<p class="hue" style='font-size:15px;text-align:center;color:white;font-family:Almendra Display;font-style:italic;text-shadow: 4px 4px 4px black;color:white' >Games_World</p></div>
+<span class="crd"style='font-size:16px;text-align:center;color:white;font-family:Almendra Display;font-style:italic;text-shadow: 4px 4px 4px black;color:white'  >Designed & Compiled by :</span >&nbsp;&nbsp; <a class="hue"style="color:white;font-size: 18px;font-family: Almendra Display;font-style:italic;text-shadow: 4px 4px 4px black;">PSJ</a>
+<h1 style='font-size:16px;text-align:center;color:white;font-family:Almendra Display;font-style:italic;text-shadow: 4px 4px 4px black;color:white' >Hosur</h1>
+<!--
+<h1>Designed by:<a href="https://twitter.com/GamerHack93" style="color: #f31414;margin-left: 10px;margin-right: 10px;">@GamerHack93</a>A special thanks to all the devs on the scene.</h1>
+</div>
+<div id="crypto">
+<h1 style="font-size: 18px;color: yellow;">Donate with Bitcoin (BTC):</h1>
+<img src="btc.jpg" width="150" height="150">
+<br>
+<h1 style="font-size: 18px;">bc1q6cnsykmvem6zgw8wag3ygee0jkhtxj6rkp2nrm</h1>
+<br>
+<h1 style="font-size: 18px;color: yellow;">Donate with Ethereum (ETH):</h1>
+<img src="eth.jpg" width="150" height="150">
+<h1 style="font-size: 18px;">0x7Ae1825ddE196925dB8B7832F436cA0eAeaF932c</h1>
+<button class="btn" onclick="load_menu()"> Return </button>
+</div>
+-->
+<script>
+function donations(){
+document.getElementById("crypto").style.display = "block";
+document.getElementById("menu").style.display = "none";
+}
+
+function load_menu(){
+document.getElementById("menu").style.display = "block";
+document.getElementById("crypto").style.display = "none";
+}
+</script>
+  <script>
+    function showdate() {
+  var dt = new Date();
+    Hour= dt.getHours();
+  Minute= dt.getMinutes();
+     Day=dt.getDate();
+   Month=dt.getMonth()+1;
+   Year=dt.getFullYear();
+if (Minute < 10) { Minute = "0" + Minute; };
+if (Hour < 10) { Hour = "0" + Hour; };
+document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
+document.getElementById("clock").innerHTML = (Hour+":"+Minute);
+  }
+  
+  setInterval(showdate,0);
+</script>
+</head>
+</body>
+</html>
